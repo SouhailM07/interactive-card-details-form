@@ -1,0 +1,12 @@
+#container {
+  background-image: url("../../assets/images/bg-main-desktop.png");
+  background-repeat: no-repeat;
+  background-size: 30rem 100%;
+}
+
+@media screen and (max-width: 575px) {
+  #container {
+    background-image: url("../../assets/images/bg-main-mobile.png");
+    background-size: 100% 15rem;
+  }
+}
