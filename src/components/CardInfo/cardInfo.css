@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  label {
+    @apply mb-[0.6rem];
+  }
+  input {
+    @apply focus:border-violet-950 py-[0.7rem] border-black rounded-lg border-2 outline-none mb-[1rem] text-[1.5rem] pl-[2rem];
+  }
+  input ~ span {
+    @apply text-red-500;
+  }
+  .inputContainer {
+    @apply flex flex-col;
+  }
+}

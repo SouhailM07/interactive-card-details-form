@@ -1,15 +1,16 @@
 // style
 import "./container.css";
 // components
-import { FrontCard, BackCard } from "../../components";
+import { FrontCard, BackCard, CardInfo } from "../../components";
 export default function Container() {
   return (
     <>
-      <div id="container" className="h-screen flex items-center">
-        <div className="h-[39rem] flex flex-col justify-between w-[42rem]">
+      <div id="container" className="h-screen flex items-center justify-around">
+        <div className="h-[38.5rem] flex flex-col justify-between w-[42rem] mr-[2rem]">
           <FrontCard />
           <BackCard />
         </div>
+        <CardInfo />
       </div>
     </>
   );

@@ -9,7 +9,7 @@
   #frontCard {
     background: no-repeat url("../../assets/images/bg-card-front.png");
     background-size: cover;
-    @apply w-[35rem] h-[18rem] rounded-xl flex flex-col justify-around px-[3rem];
+    @apply w-[84%] h-[18rem] rounded-xl flex flex-col justify-around px-[3rem];
   }
   #frontCard-s1 {
     @apply flex  justify-between w-[6.2rem];
