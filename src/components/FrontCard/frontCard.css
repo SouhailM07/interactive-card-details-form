@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /*=====================================================================================*/
+  /* section one */
+  /*=====================================================================================*/
+  #frontCard {
+    background: no-repeat url("../../assets/images/bg-card-front.png");
+    background-size: cover;
+    @apply w-[35rem] h-[18rem] rounded-xl flex flex-col justify-around px-[3rem];
+  }
+  #frontCard-s1 {
+    @apply flex  justify-between w-[6.2rem];
+  }
+  #frontCard-s1-bc {
+    @apply bg-white h-[3.3rem] w-[3.3rem] rounded-full;
+  }
+  #frontCard-s1-sc {
+    @apply border-[1px] border-white h-[1.7rem] w-[1.7rem] rounded-full mt-[8px];
+  }
+  /*=====================================================================================*/
+  /* section 2 */
+  /*=====================================================================================*/
+  #frontCard-s2 {
+    @apply flex flex-col justify-between h-[7rem] text-white;
+  }
+  #frontCard-s2-cardNumber {
+    @apply text-[2.4rem];
+    word-spacing: 9px;
+  }
+  #frontCard-s2-bottomDetails {
+    @apply flex justify-between text-[0.9rem];
+    letter-spacing: 3px;
+  }
+}
