@@ -48,9 +48,9 @@ export default function CardInfo() {
             {errors.cardNumber && <span>feild cannot be empty</span>}
           </div>
           {/*  i3*/}
-          <div className="flex">
+          <div className="grid grid-cols-2">
             {/*  i3-1*/}
-            <div className="inputContainer flex flex-col">
+            <div className="inputContainer ">
               <div>
                 <div className="mb-2">
                   <label htmlFor="" className="text-[1.1rem]">
@@ -75,7 +75,7 @@ export default function CardInfo() {
               )}
             </div>
             {/* i3-3 */}
-            <div className="inputContainer ml-[1rem] w-[16.3vw]">
+            <div className="inputContainer w-[100%]">
               <label htmlFor="">CVC</label>
               <input
                 type="number"
