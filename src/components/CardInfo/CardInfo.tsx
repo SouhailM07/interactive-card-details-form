@@ -13,12 +13,16 @@ import {
   addMM,
   addYY,
 } from "./cardInfoSlicer";
+// hooks
+import { useContext } from "react";
+import { CompleteContext } from "../Container/Container";
 
 /*======================================================================================*/
 // component section
 /*======================================================================================*/
 
 export default function CardInfo() {
+  let { complete, setComplete }: any = useContext(CompleteContext);
   let dispatch = useDispatch();
 
   let schema = z.object({
@@ -37,6 +41,7 @@ export default function CardInfo() {
   //
   let submitData = (data) => {
     console.log("it worked", data);
+    setComplete(!complete);
   };
 
   return (
