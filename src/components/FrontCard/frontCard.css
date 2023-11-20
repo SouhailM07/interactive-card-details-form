@@ -9,17 +9,19 @@
   #frontCard {
     background: no-repeat url("../../assets/images/bg-card-front.png");
     background-size: cover;
-    @apply rounded-xl flex flex-col justify-around border-2 border-black;
-    @apply lg:w-[32rem] lg:h-[18rem] md:px-[2.3vw] lg:px-[2.3rem] md:w-[38vw] md:h-[22vw];
+    @apply rounded-xl flex flex-col justify-around relative z-[1];
+    @apply lg:w-[32rem] lg:h-[18rem] md:px-[2.3vw] mbl:px-[1.5rem] lg:px-[2.3rem] md:w-[38vw] md:h-[22vw] xs:w-[25rem] xs:h-[13rem] mbl:w-[75vw] mbl:h-[12rem];
   }
   #frontCard-s1 {
-    @apply flex  justify-between w-[6.2rem];
+    @apply flex  justify-between md:w-[6.2rem] mbl:w-[4rem] items-center;
   }
   #frontCard-s1-bc {
-    @apply bg-white h-[3.3rem] w-[3.3rem] rounded-full;
+    @apply bg-white  rounded-full;
+    @apply md:h-[3.3rem] md:w-[3.3rem] mbl:h-[2.2rem] mbl:w-[2.2rem];
   }
   #frontCard-s1-sc {
-    @apply border-[1px] border-white h-[1.7rem] w-[1.7rem] rounded-full mt-[8px];
+    @apply border-[1px] border-white rounded-full;
+    @apply md:h-[1.7rem] md:w-[1.7rem] mbl:h-[0.9rem] mbl:w-[0.9rem];
   }
   /*=====================================================================================*/
   /* section 2 */
@@ -28,7 +30,7 @@
     @apply flex flex-col justify-between h-[7rem] text-white;
   }
   #frontCard-s2-cardNumber {
-    @apply md:text-[2.5vw] lg:text-[2.2rem];
+    @apply md:text-[2.5vw] lg:text-[2.2rem] xs:text-[1.8rem] mbl:text-[4.6vw];
     word-spacing: 9px;
   }
   #frontCard-s2-bottomDetails {

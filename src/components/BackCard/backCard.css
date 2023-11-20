@@ -6,9 +6,9 @@
   background: url("../../assets/images/bg-card-back.png") no-repeat;
   background-size: cover;
   @apply rounded-xl self-end flex items-center justify-end;
-  @apply lg:w-[32rem] lg:h-[18rem] md:w-[38vw] md:h-[22vw];
+  @apply lg:w-[32rem] lg:h-[18rem] md:w-[38vw] md:h-[22vw] xs:h-[13rem] xs:w-[25rem] relative md:top-[0] mbl:top-[4rem] xs:top-[5rem] z-[0] mbl:w-[75vw] mbl:h-[12rem];
 }
 
 #BackCard div {
-  @apply lg:mr-[4rem] md:mr-[2rem] lg:mt-[1rem] text-[1.2rem] text-white;
+  @apply lg:mr-[4rem] md:mr-[2rem] mbl:mr-[2rem] xs:mr-[3.5rem] mt-[1rem] text-[1.2rem] text-white;
 }

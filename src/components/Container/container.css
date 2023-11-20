@@ -4,7 +4,13 @@
   background-size: 32vw 100%;
 }
 
-@media screen and (max-width: 575px) {
+#container-cardsContainer {
+  @apply flex  justify-between border-2 border-red-500;
+  @apply md:h-[50vw] md:w-[47vw] lg:h-[38.5rem] lg:w-[39rem] md:flex-col mbl:flex-col-reverse  xs:w-[30rem] mbl:w-[90vw];
+  @apply md:mr-[2rem] md:top-[0] mbl:top-[-2.5rem] relative;
+}
+
+@media screen and (max-width: 800px) {
   #container {
     background-image: url("../../assets/images/bg-main-mobile.png");
     background-size: 100% 15rem;

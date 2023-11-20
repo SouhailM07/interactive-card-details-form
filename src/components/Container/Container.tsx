@@ -8,13 +8,13 @@ export default function Container() {
     <>
       <div
         id="container"
-        className="h-screen flex items-center justify-around px-[4rem]"
+        className="h-screen flex md:flex-row xs:flex-col items-center justify-around md:px-[4rem]"
       >
-        <div className="lg:h-[38.5rem] border-2 border-red-500 md:h-[50vw] md:w-[47vw] flex flex-col justify-between lg:w-[39rem] mr-[2rem] ">
+        <div id="container-cardsContainer" className="">
           <FrontCard />
           <BackCard />
         </div>
-        <CardInfo />
+        {/* <CardInfo /> */}
       </div>
     </>
   );
