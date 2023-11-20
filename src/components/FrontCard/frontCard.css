@@ -9,7 +9,8 @@
   #frontCard {
     background: no-repeat url("../../assets/images/bg-card-front.png");
     background-size: cover;
-    @apply w-[84%] h-[18rem] rounded-xl flex flex-col justify-around px-[3rem];
+    @apply rounded-xl flex flex-col justify-around border-2 border-black;
+    @apply lg:w-[32rem] lg:h-[18rem] md:px-[2.3vw] lg:px-[2.3rem] md:w-[38vw] md:h-[22vw];
   }
   #frontCard-s1 {
     @apply flex  justify-between w-[6.2rem];
@@ -27,11 +28,12 @@
     @apply flex flex-col justify-between h-[7rem] text-white;
   }
   #frontCard-s2-cardNumber {
-    @apply text-[2.4rem];
+    @apply md:text-[2.5vw] lg:text-[2.2rem];
     word-spacing: 9px;
   }
   #frontCard-s2-bottomDetails {
     @apply flex justify-between text-[0.9rem];
     letter-spacing: 3px;
+    text-transform: uppercase;
   }
 }
