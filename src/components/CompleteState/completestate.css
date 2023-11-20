@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#CompleteState {
+  @apply flex flex-col  justify-between items-center;
+  @apply lg:h-[23rem] lg:w-[30rem];
+}
+
+#CompleteState-middle {
+  @apply flex flex-col items-center space-y-3;
+}
+
+#CompleteState h1 {
+  @apply lg:text-[2rem];
+}
+
+#CompleteState p {
+  @apply lg:text-[1.2rem];
+}
+
+#CompleteState button {
+  @apply rounded-md;
+  @apply md:py-[1vw] lg:py-[1rem] w-full text-[1.3rem] mbl:py-[1rem];
+  @apply bg-violet-950 text-white;
+}
