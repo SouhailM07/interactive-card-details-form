@@ -10,9 +10,9 @@ export default function Container() {
         id="container"
         className="h-screen flex items-center justify-around px-[4rem]"
       >
-        <div className="h-[38.5rem] flex flex-col justify-between w-[39rem] mr-[2rem] ">
+        <div className="lg:h-[38.5rem] border-2 border-red-500 md:h-[50vw] md:w-[45vw] flex flex-col justify-between lg:w-[39rem] mr-[2rem] ">
           <FrontCard />
-          {/* <BackCard /> */}
+          <BackCard />
         </div>
         {/* <CardInfo /> */}
       </div>

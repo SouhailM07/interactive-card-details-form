@@ -1,9 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 #BackCard {
   background: url("../../assets/images/bg-card-back.png") no-repeat;
   background-size: cover;
-  @apply w-[32rem] h-[18rem] rounded-xl self-end flex items-center justify-end;
+  @apply rounded-xl self-end flex items-center justify-end;
+  @apply lg:w-[32rem] lg:h-[18rem] md:w-[38vw] md:h-[22vw];
 }
 
 #BackCard div {
-  @apply mr-[4rem] mt-[1rem] text-[1.2rem] text-white;
+  @apply lg:mr-[4rem] md:mr-[2rem] lg:mt-[1rem] text-[1.2rem] text-white;
 }
