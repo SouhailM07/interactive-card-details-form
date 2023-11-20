@@ -1,7 +1,7 @@
 // style
 import "./container.css";
 // components
-import { FrontCard, BackCard, CardInfo } from "../../components";
+import { FrontCard, BackCard, CardInfo, CompleteState } from "../../components";
 
 export default function Container() {
   return (
@@ -14,7 +14,8 @@ export default function Container() {
           <FrontCard />
           <BackCard />
         </div>
-        <CardInfo />
+        {/* <CardInfo /> */}
+        <CompleteState />
       </div>
     </>
   );
