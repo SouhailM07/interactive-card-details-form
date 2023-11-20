@@ -5,7 +5,7 @@
 }
 
 #container-cardsContainer {
-  @apply flex  justify-between border-2 border-red-500;
+  @apply flex  justify-between;
   @apply md:h-[50vw] md:w-[47vw] lg:h-[38.5rem] lg:w-[39rem] md:flex-col mbl:flex-col-reverse  xs:w-[30rem] mbl:w-[90vw];
   @apply md:mr-[2rem] md:top-[0] mbl:top-[-2.5rem] relative;
 }

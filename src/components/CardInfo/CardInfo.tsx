@@ -41,7 +41,7 @@ export default function CardInfo() {
 
   return (
     <>
-      <div className="lg:w-[30rem] md:w-[40vw] border-red-500 border-2">
+      <div className="lg:w-[30rem] md:w-[40vw] mbl:w-[90vw] xs:max-w-[40rem] ">
         <form
           action=""
           onSubmit={handleSubmit(submitData)}
@@ -83,18 +83,18 @@ export default function CardInfo() {
                 <input
                   type="number"
                   {...register("mm", { valueAsNumber: true })}
-                  className="w-[6.5vw] mr-[1rem]"
+                  className="md:w-[6.8vw] mr-[1rem] xs:w-[5rem] mbl:w-[35%]"
                   onChange={(e) => dispatch(addMM(e.target.value))}
                 />
                 <input
                   type="number"
                   {...register("yy", { valueAsNumber: true })}
-                  className="w-[6.5vw]"
+                  className="md:w-[6.8vw] xs:w-[5rem] mbl:w-[35%]"
                   onChange={(e) => dispatch(addYY(e.target.value))}
                 />
               </div>
               {errors.mm ? (
-                <span className="text-red-500">cant be blanc</span>
+                <span className="text-red-500 ">cant be blanc</span>
               ) : (
                 errors.yy && <span className="text-red-500">cant be blanc</span>
               )}
@@ -113,7 +113,7 @@ export default function CardInfo() {
           {/*  */}
           <button
             type="submit"
-            className="bg-violet-950 text-white w-full lg:py-[1rem] md:py-[1vw] rounded-md text-[1.3rem]"
+            className="bg-violet-950 text-white w-full lg:py-[1rem] md:py-[1vw] rounded-md text-[1.3rem] mbl:py-[1rem]"
           >
             Confirm
           </button>
