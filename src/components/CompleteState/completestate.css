@@ -4,23 +4,22 @@
 
 #CompleteState {
   @apply flex flex-col  justify-between items-center;
-  @apply lg:h-[23rem] lg:w-[30rem] md:w-[35vw] md:h-[27vw];
-  @apply border-2 border-green-500;
+  @apply lg:h-[23rem] lg:w-[30rem] md:w-[35vw] md:h-[27vw] mbl:w-[90vw] mbl:h-[20rem];
 }
 
 #CompleteState-middle {
   @apply flex flex-col items-center space-y-3;
 }
 #CompleteState img {
-  @apply lg:h-auto md:h-[8vw];
+  @apply lg:h-auto md:h-[8vw] mbl:h-[5rem];
 }
 
 #CompleteState h1 {
-  @apply lg:text-[2rem] md:text-[2vw];
+  @apply lg:text-[2rem] md:text-[2vw] mbl:text-[2rem];
 }
 
 #CompleteState p {
-  @apply lg:text-[1.2rem] md:text-[1.5vw];
+  @apply lg:text-[1.2rem] md:text-[1.5vw]  mbl:text-[1.5rem];
 }
 
 #CompleteState button {

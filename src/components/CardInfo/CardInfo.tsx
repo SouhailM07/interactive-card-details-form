@@ -45,7 +45,7 @@ export default function CardInfo() {
         <form
           action=""
           onSubmit={handleSubmit(submitData)}
-          className="flex flex-col justify-between  lg:h-[32rem]"
+          className="flex flex-col justify-between  lg:h-[32rem] md:h-[42vw] mbl:h-[30rem]"
         >
           {/* i1 */}
           <div className="inputContainer">
@@ -83,13 +83,13 @@ export default function CardInfo() {
                 <input
                   type="number"
                   {...register("mm", { valueAsNumber: true })}
-                  className="md:w-[6.8vw] mr-[1rem] xs:w-[5rem] mbl:w-[35%]"
+                  className="md:w-[6.8vw] mr-[1rem] xs:w-[5rem] mbl:w-[38%]"
                   onChange={(e) => dispatch(addMM(e.target.value))}
                 />
                 <input
                   type="number"
                   {...register("yy", { valueAsNumber: true })}
-                  className="md:w-[6.8vw] xs:w-[5rem] mbl:w-[35%]"
+                  className="md:w-[6.8vw] xs:w-[5rem] mbl:w-[38%]"
                   onChange={(e) => dispatch(addYY(e.target.value))}
                 />
               </div>

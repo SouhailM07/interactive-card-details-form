@@ -10,12 +10,12 @@ export default function Container() {
         id="container"
         className="h-screen flex md:flex-row mbl:flex-col items-center justify-around md:px-[4rem]"
       >
-        <div id="container-cardsContainer" className="">
+        <div id="container-cardsContainer">
           <FrontCard />
           <BackCard />
         </div>
-        {/* <CardInfo /> */}
-        <CompleteState />
+        <CardInfo />
+        {/* <CompleteState /> */}
       </div>
     </>
   );
