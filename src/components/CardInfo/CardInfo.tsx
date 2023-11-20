@@ -41,11 +41,11 @@ export default function CardInfo() {
 
   return (
     <>
-      <div className="w-[30rem] ">
+      <div className="lg:w-[30rem] md:w-[40vw] border-red-500 border-2">
         <form
           action=""
           onSubmit={handleSubmit(submitData)}
-          className="flex flex-col justify-between h-[32rem]"
+          className="flex flex-col justify-between  lg:h-[32rem]"
         >
           {/* i1 */}
           <div className="inputContainer">
@@ -113,7 +113,7 @@ export default function CardInfo() {
           {/*  */}
           <button
             type="submit"
-            className="bg-violet-950 text-white w-[100%] p-4 rounded-md text-[1.3rem]"
+            className="bg-violet-950 text-white w-full lg:py-[1rem] md:py-[1vw] rounded-md text-[1.3rem]"
           >
             Confirm
           </button>

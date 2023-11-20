@@ -7,7 +7,8 @@
     @apply mb-[0.6rem];
   }
   input {
-    @apply focus:border-violet-950 py-[0.7rem] border-black rounded-lg border-2 outline-none mb-[1rem] text-[1.5rem] pl-[2rem];
+    @apply focus:border-violet-950 py-[0.7rem] border-black rounded-lg border-2 outline-none mb-[1rem]  pl-[2rem];
+    @apply lg:h-[4rem] md:h-[5vw] lg:text-[1.5rem] md:text-[1.7vw];
   }
   input ~ span {
     @apply text-red-500;
