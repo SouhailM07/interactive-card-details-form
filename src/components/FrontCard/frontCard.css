@@ -30,12 +30,10 @@
     @apply flex flex-col justify-between h-[7rem] text-white;
   }
   #frontCard-s2-cardNumber {
-    @apply md:text-[2.5vw] lg:text-[2.2rem] xs:text-[1.8rem] mbl:text-[4.6vw];
+    @apply md:text-[2.5vw] lg:text-[2.2rem] xs:text-[1.8rem] mbl:text-[5vw];
     word-spacing: 9px;
   }
   #frontCard-s2-bottomDetails {
-    @apply flex justify-between text-[0.9rem];
-    letter-spacing: 3px;
-    text-transform: uppercase;
+    @apply flex justify-between uppercase text-[0.9rem] tracking-[3px];
   }
 }

@@ -14,7 +14,7 @@ import {
   addYY,
 } from "./cardInfoSlicer";
 // hooks
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { CompleteContext } from "../Container/Container";
 
 /*======================================================================================*/
@@ -32,6 +32,7 @@ export default function CardInfo() {
     yy: z.number().min(1).max(12),
     cvc: z.number(),
   });
+
   //
   let {
     handleSubmit,
@@ -43,7 +44,9 @@ export default function CardInfo() {
     console.log("it worked", data);
     setComplete(!complete);
   };
-
+  useEffect(() => {
+    console.log("zod render");
+  }, [submitData]);
   return (
     <>
       <div className="lg:w-[30rem] md:w-[40vw] mbl:w-[90vw] xs:max-w-[40rem] ">
@@ -101,7 +104,9 @@ export default function CardInfo() {
               {errors.mm ? (
                 <span className="text-red-500 ">cant be blanc</span>
               ) : (
-                errors.yy && <span className="text-red-500">cant be blanc</span>
+                errors.yy && (
+                  <span className="text-blue-500">cant be blanc</span>
+                )
               )}
             </div>
             {/* i3-3 */}
